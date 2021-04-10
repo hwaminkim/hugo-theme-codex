@@ -20,6 +20,14 @@
           </article>
           {{ partial "tags.html" .}} {{ partial "post-pagination.html" .}}
           {{ template "_internal/disqus.html" . }}
+          <script src="https://utteranc.es/client.js"
+                  repo="hwaminkim/hwaminkim.github.io"
+                  issue-term="pathname"
+                  label="Comment"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async>
+          </script>
           <footer class="post__footer">
             {{ partial "social-icons.html" .}}
             <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
